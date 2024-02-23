@@ -1,4 +1,4 @@
-This MD walks users through JoyBill Framework syntaxes
+This MD walks users through JoyBillv2 Framework syntaxes
 * To init a Neural network:
   >> nn = NeuralNetwork()
 * (Optional) Setup Learning_rate(Alpha) and/or Batch_size
