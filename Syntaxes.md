@@ -6,7 +6,9 @@ This MD walks users through JoyBill Framework syntaxes
 * Add Layers (Each with amount of hidden neurons and Activation function)
   -> relu / sigmoid / tanh / identity
   >> nn.addLayer(10, 'relu')
+  >> 
   >> nn.addLayer(15, 'sigmoid')
+  >> 
   >> ...
 * Add Output Layer (amount of hidden neurons without Activation function)
   >> nn.addLayer(10)
@@ -16,4 +18,5 @@ This MD walks users through JoyBill Framework syntaxes
   >> nn.describe()
 * Predict and Accuracy
   >> predictions = nn.predict(x_validate)
+  >> 
   >> nn.get_accuracy(predictions, y_validate)
