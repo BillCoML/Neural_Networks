@@ -14,6 +14,7 @@ This MD walks users through JoyBillv2 Framework syntaxes
   >> nn.addLayer(10)
 * Start Training (required fields: x_train, y_train, epochs)
   >> nn.fit(x_train, y_train, epochs = 5)
+  >> A feature from v3: If training on a Notebook(Jupyer, Collab, etc.)
 * (Optional) View description of Neural Network structure(After Training is Done)
   >> nn.describe()
 * Predict and Accuracy
