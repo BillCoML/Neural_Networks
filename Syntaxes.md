@@ -2,7 +2,7 @@ This MD walks users through JoyBillv2 Framework syntaxes
 * Requirements for Input and Output:
   >> The Input must be a 2d array, with each column represents a sample.
   >> 
-  >> The Output is a 1d array, every index represents an actual output value.
+  >> The Output is an 1d array, every index represents an actual output value.
 * To init a Neural network:
   >> nn = NeuralNetwork()
 * (Optional) Setup Learning_rate(Alpha) and/or Batch_size
