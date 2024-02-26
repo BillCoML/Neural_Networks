@@ -19,7 +19,10 @@ This MD walks users through JoyBillv2 Framework syntaxes
 * Start Training (required fields: x_train, y_train, epochs)
   >> nn.fit(x_train, y_train, epochs = 5)
   >> 
-  >> A new feature from v3: If trainings happen on a Notebook(Jupyer, Collab, etc.) running the cell which has fit() function tells the model to train itself using the most recent Weights and Biases. ! Do not regenerate a new object nor pass in new X-train and Y-train.
+  >> A new feature from v3: If trainings happen on a Notebook(Jupyer, Collab, etc.) running the cell which has fit() function tells the model to train itself again using the most recent Weights and Biases. ! Do not regenerate a new object nor pass in new X-train and Y-train.
+  >>
+  >> If wanted, users can change learning rate (alpha) / Not batch_size as well.
+  >> 
   >> Thus, if users find the need to train the model more without starting over, they only need to run the fit() again and again.
 * (Optional) View description of Neural Network structure(After Training is Done)
   >> nn.describe()
