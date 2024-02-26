@@ -8,7 +8,7 @@ This MD walks users through the lastest JoyBill(v3) Framework syntaxes
 * (Optional) Setup Learning_rate(Alpha) and/or Batch_size
   >> nn.set(alpha=0.01, batch_size=32) <- Default values
 * (Optional) Safety mode(Auto adjusting learning rate)
-  >> nn.safety(reduceBy = 0.1) ##reduce learning by 10% for each significant drop in accuracy
+  >> nn.safety(dropBy = 0.01, reduceLRBy = 0.1) ##reduce learning rate by 10% for when accuracy drops by 1%
 * Add Layers (Each with amount of hidden neurons and Activation function)
   -> relu / sigmoid / tanh / identity
   >> nn.addLayer(10, 'relu')
