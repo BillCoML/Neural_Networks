@@ -1,4 +1,4 @@
-This MD walks users through JoyBillv2 Framework syntaxes
+This MD walks users through the lastest JoyBill(v3) Framework syntaxes
 * Requirements for Input and Output:
   >> The Input must be a 2d array, with each column represents a sample.
   >> 
@@ -7,6 +7,8 @@ This MD walks users through JoyBillv2 Framework syntaxes
   >> nn = NeuralNetwork()
 * (Optional) Setup Learning_rate(Alpha) and/or Batch_size
   >> nn.set(alpha=0.01, batch_size=32) <- Default values
+* (Optional) Safety mode(Auto adjusting learning rate)
+  >> nn.safety(reduceBy = 0.1) ##reduce learning by 10% for each significant drop in accuracy
 * Add Layers (Each with amount of hidden neurons and Activation function)
   -> relu / sigmoid / tanh / identity
   >> nn.addLayer(10, 'relu')
