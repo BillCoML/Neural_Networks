@@ -24,7 +24,7 @@ class NeuralNetwork:
         self.alpha = alpha
         self.batch_size = batch_size
 
-    def safety(self, dropBy:float, reduceLRBy:float, stoppingLR=0.0005):
+    def safety(self, dropBy = 0.01, reduceLRBy = 0.1, stoppingLR = 0.0005):
         #SAFETY FEATURE
         self.auto_adjust = True
         self.reduceLRBy = reduceLRBy
