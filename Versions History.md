@@ -9,8 +9,6 @@ Feb 16, 2024_JoyBillv1: The first Deep Learning Framework by BilldaLab
 Feb 20, 2024_JoyBillv2: Mini-batch Gradient Descent is built-in
 - Training speed has increased substantially.
 
-Feb 25, 2024_JoyBillv3: Train on any dataType of Labels
+Feb 25, 2024_JoyBillv3: Train on any dataType of Labels and Auto-fix learning rate
 - In the previous versions, users need to translate each output possibility to be digit which causes a tedious process.
 !!! Using this version, users can feed the model almost any type of Labels, from numbers to categories. Although it takes some time, but it is easier.
-
-UPCOMING feature: AUTO-ADJUSTING LEARNING RATE TO FIND THE BEST TRAINING Learning rate 
