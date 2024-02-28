@@ -5,10 +5,10 @@ This MD walks users through the lastest JoyBill(v3) Framework syntaxes
   >> The Output is an 1d array, every index represents an actual output value.
 * To init a Neural network:
   >> nn = NeuralNetwork()
-* (Optional) Setup Learning_rate(Alpha) and/or Batch_size
-  >> nn.set(alpha=0.01, batch_size=32) <- Default values
+* (Optional) Setup Learning_rate(Alpha) and/or Batch_size, unitGradient makes all generated gradients to be of length 1
+  >> nn.set(alpha=0.01, batch_size=32, unitGradient=True) <- Default values
 * (Optional) Safety mode(Auto adjusting learning rate)
-  >> nn.safety(dropBy = 0.01, reduceLRBy = 0.1, stoppingLR = 0.0005) ##reduce learning rate by 10% for when accuracy drops by 1% and stop Training if lr <= 0.0005
+  >> nn.safety(whenDropBy = 0.01, reduceLRBy = 0.05, stoppingLR = 0.0001) ##reduce learning rate by 5% for when accuracy drops by 1% and stop Training if lr <= 0.0001
   >> 
 * Add Layers (Each with amount of hidden neurons and Activation function)
   -> relu / sigmoid / tanh / identity
