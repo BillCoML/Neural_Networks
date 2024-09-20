@@ -1,4 +1,4 @@
-This MD walks users through the lastest JoyBill(v3) Framework syntaxes
+This MD walks users through the lastest SCENet(v3) Framework syntaxes
 * Requirements for Input and Output:
   >> The Input must be a 2d array, with each column represents a sample.
   >> 
